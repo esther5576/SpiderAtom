@@ -45,6 +45,11 @@ public class SpiderSelection : MonoBehaviour
 
 	void OnGUI ()
 	{
-		GUI.Label (new Rect (10, 10, 100, 20), "Score " + _score);
+		GUIStyle myStyle = new GUIStyle ();
+		myStyle.fontSize = 30;
+		
+		myStyle.normal.textColor = Color.white;
+
+		GUI.Label (new Rect (10, 10, 100, 20), "Score " + _score, myStyle);
 	}
 }
